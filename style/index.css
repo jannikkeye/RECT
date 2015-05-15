@@ -146,7 +146,6 @@ body {
     -ms-flex: 1;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     background: #e25d60;
