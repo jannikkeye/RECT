@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECT</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+
+<body class="bodyContainer">
+    <div class="headerBanner">
+        <header>
+            <img class="title" src="assets/img/title.png">
+        </header>
+        <button class="startButton" type="button" value="START">NEW GAME</button>
+    </div>
+    <main class="container">
+        <div class="instructions">
+            <h3>You are this:<span><img src="assets/img/player.png"></span></h3>
+            <h3>Avoid this:<span><img src="assets/img/enemy.png"></span></h3>
+            <h3>Collect this:<span><img src="assets/img/point.png"></span></h3>
+            <h3>Use these: <span><img class="arrows" src="assets/img/arrows.png"></span></h3>
+        </div>
+        <div class="gameContainer">
+            <div id="world"></div>
+        </div>
+        <div class="score">
+            <h3 id="livesLabel">Your lives: <span id="livesDisplay"></span></h3>
+            <h3 id="scoreLabel">Your score: <span id="scoreDisplay"></span></h3>
+            <h3 id="lastScoreLabel">Your last score: <span id="lastScoreDisplay"></span></h3>
+            <h3 id="highScoreLabel">Your highscore: <span id="highScoreDisplay"></span></h3>
+
+        </div>
+    </main>
+    <div class="footerBanner">
+        <footer><img src="assets/img/madeby.png"> </footer>
+    </div>
+
+    <script src="js/model/player.js"></script>
+    <script src="js/model/enemy.js"></script>
+    <script src="js/model/point.js"></script>
+    <script src="js/model/world.js"></script>
+    <script src="js/view/CanvasView.js"></script>
+    <script src="js/controller/controller.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
