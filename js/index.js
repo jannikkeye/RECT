@@ -11,15 +11,6 @@ var two = "<img src='assets/img/2.png'>";
 var one = "<img src='assets/img/1.png'>";
 
 
-var updateCountdown = function () {
-    if (timer <= 3000 && timer > 2000) {
-        world.innerHTML = three;
-    } else if (timer <= 2000 && timer > 1000) {
-        world.innerHTML = two;
-    } else if (timer <= 1000 && timer > 0) {
-        world.innerHTML = one;
-    }
-};
 
 document.querySelector(".startButton").addEventListener('click', function () {
     if (!gameIsRunning) {
@@ -28,24 +19,22 @@ document.querySelector(".startButton").addEventListener('click', function () {
         gameIsRunning = true;
         startGame();
         timer = 3000;
-        setInterval(updateCountdown, 10);
     }
 });
 
-setInterval(updateCountdown, 10);
 
 
 var startGame = function () {
 
     setTimeout(function () {
-        timer = timer - 1000;
+        world.innerHTML = three;
+    }, 0);
+    setTimeout(function () {
+        world.innerHTML = two;
     }, 1000);
     setTimeout(function () {
-        timer = timer - 1000;
+        world.innerHTML = one;
     }, 2000);
-    setTimeout(function () {
-        timer = timer - 1000;
-    }, 3000);
 
     setTimeout(function () {
         world.innerHTML = '';
