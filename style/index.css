@@ -149,7 +149,6 @@ body {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     background: #e25d60;
-    box-sizing: border-box;
     width: 250px;
     font-size: 80px;
     font-family: Poplar;
