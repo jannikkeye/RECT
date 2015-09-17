@@ -1,0 +1,1 @@
+function Player(i,h){this.x=i,this.y=h,this.v=4,this.width=15,this.height=15,this.score=0,this.lives=3}

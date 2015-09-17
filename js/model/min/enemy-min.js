@@ -1,0 +1,1 @@
+function Enemy(h,i){this.x=h,this.y=i,this.v=1,this.width=15,this.height=15}
